@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://pi17jg28nyty"]
+
+[ext_resource type="Script" path="res://Volume_Slider.gd" id="1_k7ask"]
+
+[node name="Volume_Slider" type="HSlider"]
+offset_right = 8.0
+offset_bottom = 16.0
+max_value = 1.0
+step = 0.001
+script = ExtResource("1_k7ask")
