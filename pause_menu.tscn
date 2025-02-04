@@ -120,15 +120,8 @@ text = "Exit
 "
 
 [node name="OptionMenu" parent="." instance=ExtResource("3_vwk0p")]
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 804.0
-offset_top = 475.5
-offset_right = 1105.0
-offset_bottom = 611.5
-grow_horizontal = 1
-grow_vertical = 1
+visible = false
+layout_mode = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

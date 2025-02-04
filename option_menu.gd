@@ -16,12 +16,11 @@ func _on_back_pressed() -> void:
 	option_menu.set_process(false)
 	option_menu.visible = false
 	if current_scene == "Menu":
-		print("Menu scene")
+		#print("Menu scene")
 		get_tree().change_scene_to_file("res://Main_Menu.tscn")
 	
 	else:
-		print("Game scene")
-		#animation_player.play_backwards("blur")
+		#print("Game scene")
 		option_menu.visible = false
 		option_menu.set_process(false)
 		var pause_menu_margin = $"../MarginContainer"

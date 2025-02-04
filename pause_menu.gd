@@ -1,8 +1,6 @@
 extends Control
 
 @onready var margin_container: MarginContainer = $MarginContainer
-#@onready var option_menu: Control = $CanvasLayer/OptionMenu
-
 @onready var option_menu: Control = $OptionMenu
 
 
@@ -43,8 +41,8 @@ func _on_option_pressed() -> void:
 	margin_container.set_process(false)
 	option_menu.visible = true
 	option_menu.set_process(true)
-	print("option menu visibal now")
-	#make margin container in pause menu visibal again
+	#print("option menu visibal now")
+	
 
 
 
