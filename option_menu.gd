@@ -26,5 +26,4 @@ func _on_back_pressed() -> void:
 		var pause_menu_margin = $"../MarginContainer"
 		pause_menu_margin.visible = true
 
-	#option_menu_back_pressed.emit()
 	

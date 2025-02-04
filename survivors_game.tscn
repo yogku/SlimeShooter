@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bd8o75hwlumup"]
+[gd_scene load_steps=9 format=3 uid="uid://bd8o75hwlumup"]
 
 [ext_resource type="Script" path="res://survivors_game.gd" id="1_3y2w6"]
 [ext_resource type="PackedScene" uid="uid://dshkrfp4605au" path="res://player.tscn" id="1_6pu47"]
 [ext_resource type="PackedScene" uid="uid://b8wxrfuvflodh" path="res://pause_menu.tscn" id="2_3yeu4"]
 [ext_resource type="PackedScene" uid="uid://c7qy38g8jwibj" path="res://game_over.tscn" id="2_b1oli"]
 [ext_resource type="PackedScene" uid="uid://dsosputlwcaid" path="res://pine_tree.tscn" id="2_rfx00"]
+[ext_resource type="Texture2D" uid="uid://cnbsg0rhr6njn" path="res://Textures/kenney_tiny-town/Tiles/tile_0000.png" id="2_sccfu"]
 [ext_resource type="Script" path="res://score_lable.gd" id="2_vyuek"]
 
 [sub_resource type="Curve2D" id="Curve2D_6l21h"]
@@ -24,9 +25,16 @@ autostart = true
 layer = -20
 
 [node name="ColorRect" type="ColorRect" parent="BackGroundCanvasLayer"]
+visible = false
 offset_left = 1.0
 offset_right = 1920.0
 offset_bottom = 1079.0
+metadata/_edit_use_anchors_ = true
+
+[node name="background" type="TextureRect" parent="BackGroundCanvasLayer"]
+offset_right = 1919.0
+offset_bottom = 1079.0
+texture = ExtResource("2_sccfu")
 metadata/_edit_use_anchors_ = true
 
 [node name="Player" parent="." instance=ExtResource("1_6pu47")]
